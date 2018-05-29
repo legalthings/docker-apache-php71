@@ -33,7 +33,7 @@ RUN echo "zend_extension = /usr/local/ioncube/ioncube_loader_lin_7.1.so" > /usr/
 
 RUN apt-get install -y libsodium-dev
 RUN pecl install libsodium && \
-    echo "extension=libsodium.so" > /usr/local/etc/php/conf.d/ext-sodium.ini
+    echo "extension=sodium.so" > /usr/local/etc/php/conf.d/ext-sodium.ini
 
 ADD https://github.com/legalthings/base58-php-ext/archive/v0.1.2.tar.gz /tmp/
 
